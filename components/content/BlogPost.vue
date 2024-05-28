@@ -44,34 +44,35 @@ const { next, prev } = useContent();
         <p>{{ next.description }}</p>
       </div>
     </div> -->
-    <div class="grid gap-8 sm:grid-cols-2">
+    <div class="grid grid-cols-2 gap-4 mt-8 p-2">
       <div v-if="prev">
         <NuxtLink
           :to="prev._path"
-          class="block px-6 py-8 border not-prose rounded-lg border-gray-200 dark:border-gray-800 hover:bg-gray-100/50 dark:hover:bg-gray-800/50 group"
+          class="block p-1 border not-prose rounded-lg border-gray-200 dark:border-gray-800 hover:bg-gray-100/50 dark:hover:bg-gray-800/50 group"
         >
+          <p
+            class="text-sm font-normal text-gray-500 dark:text-gray-400 line-clamp-2 mb-1"
+          >
+            Previous
+          </p>
           <p class="font-medium text-gray-900 dark:text-white text-[15px] mb-1">
             {{ prev.title }}
-          </p>
-          <p
-            class="text-sm font-normal text-gray-500 dark:text-gray-400 line-clamp-2"
-          >
-            {{ prev.description }}
           </p>
         </NuxtLink>
       </div>
       <div v-if="next">
         <NuxtLink
           :to="next._path"
-          class="block px-6 py-8 border not-prose rounded-lg border-gray-200 dark:border-gray-800 hover:bg-gray-100/50 dark:hover:bg-gray-800/50 group text-right"
+          class="block p-1 border not-prose rounded-lg border-gray-200 dark:border-gray-800 hover:bg-gray-100/50 dark:hover:bg-gray-800/50 group text-right"
         >
+          <p
+          class="text-sm font-normal text-gray-500 dark:text-gray-400 line-clamp-2 mb-1"
+          >
+            <!-- {{ next.description }} -->
+            Next
+          </p>
           <p class="font-medium text-gray-900 dark:text-white text-[15px] mb-1">
             {{ next.title }}
-          </p>
-          <p
-            class="text-sm font-normal text-gray-500 dark:text-gray-400 line-clamp-2"
-          >
-            {{ next.description }}
           </p>
         </NuxtLink>
       </div>

@@ -13,24 +13,24 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
-    '@nuxtjs/color-mode',
+    "@nuxtjs/color-mode",
+    "nuxt-meilisearch",
   ],
   content: {
     highlight: {
       theme: "light-plus",
     },
     documentDriven: true,
-    experimental: {},
   },
   googleFonts: {
     families: {
-      'Merriweather': [400, 700],
-      'Merriweather Sans': [400, 700],
-      'Noto Serif TC': [300, 600]
+      Merriweather: [400, 700],
+      "Merriweather Sans": [400, 700],
+      "Noto Serif TC": [300, 600],
     },
     download: true, // Download the fonts and serve them locally
   },
   colorMode: {
-    classSuffix: ''
-  }
+    classSuffix: "",
+  },
 });
