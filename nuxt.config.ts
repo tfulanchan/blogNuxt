@@ -1,21 +1,32 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content", '@nuxtjs/tailwindcss', "@nuxt/image"],
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/image",
+    "@nuxtjs/google-fonts",
+  ],
   content: {
     highlight: {
-      theme: 'light-plus'
+      theme: "light-plus",
     },
     documentDriven: true,
-    experimental: {
-      
-    }
+    experimental: {},
+  },
+  googleFonts: {
+    families: {
+      'Merriweather': [400, 700],
+      'Merriweather Sans': [400, 700],
+      'Noto Serif TC': [300, 600]
+    },
+    download: true, // Download the fonts and serve them locally
   },
 });

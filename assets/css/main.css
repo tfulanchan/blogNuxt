@@ -16,32 +16,22 @@
     src: url("@site/assets/Merriweather/Merriweather-Regular.ttf")
       format("TrueType");
   }
-  @font-face {
-    font-family: 'Merriweather Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Merriweather Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
   h1 {
-    font-family: 'Merriweather', system-ui;
+    font-family: "Merriweather", 'Noto Serif TC', system-ui;
     font-weight: bold;
     font-size: 2.5rem;
     /* margin: 24px 0 8px; */
     margin: 1.5rem 2rem 1rem;
     /* margin: 0 0 25px;     */
   }
-  p, pre {
-    font-family: Merriweather;
+  p,
+  pre,
+  li {
+    font-family: 'Merriweather Sans', 'Noto Serif TC';
     margin: 1.5rem 2rem 1rem;
+  }
+  a {
+    font-family: 'Merriweather Sans', 'Noto Serif TC';
   }
   h2 {
     /* font-family: 'Alimama ShuHeiTi Bold'; */
@@ -55,7 +45,7 @@
 
   h3 {
     /* font-family: 'Alimama ShuHeiTi Bold'; */
-    font-family: 'Merriweather Sans', system-ui;
+    font-family: "Merriweather Sans", system-ui;
     font-size: 1.7rem;
   }
 

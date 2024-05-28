@@ -2,7 +2,7 @@
 const { navigation } = useContent();
 </script>
 <template>
-  <div class="max-w-md mx-auto bg-white rounded-xl   md:max-w-2xl">
+  <div class="max-w-md mx-auto bg-white rounded-xl md:max-w-2xl">
     <nav>
       <ul>
         <li v-for="nav in navigation" :key="nav._path">
@@ -14,6 +14,7 @@ const { navigation } = useContent();
     </nav>
     <NuxtPage />
   </div>
+  <br />
 </template>
 
 <style scoped>
