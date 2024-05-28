@@ -12,7 +12,7 @@ const { data } = await useAsyncData(() => {
       <NuxtLink :to="post._path"> Read more ... </NuxtLink>
     </div>
     </div>
-    <div class="max-w-sm rounded shadow-lg overflow-hidden w-full max-w-full md:max-w-2xl mb-5">
+    <div class="rounded shadow-lg overflow-hidden w-full max-w-full md:max-w-2xl mb-5">
       <!-- <img class="w-full" src="/img/image.jpg" alt="Sunset in the mountains" /> -->
       <div class="px-6 py-4">
         <h2 class="font-bold text-xl mb-2">The Coldest Sunset</h2>

@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
+    '@nuxtjs/color-mode',
   ],
   content: {
     highlight: {
@@ -29,4 +30,7 @@ export default defineNuxtConfig({
     },
     download: true, // Download the fonts and serve them locally
   },
+  colorMode: {
+    classSuffix: ''
+  }
 });

@@ -5,7 +5,8 @@ const { navigation } = useContent();
   <div class="max-w-md mx-auto bg-white rounded-xl md:max-w-2xl">
     <nav>
       <ul>
-        <li v-for="nav in navigation" :key="nav._path">
+        <li class="font-semibold flex items-center gap-1 hover:text-primary"
+        v-for="nav in navigation" :key="nav._path">
           <NuxtLink :to="nav._path">
             {{ nav.title }}
           </NuxtLink>
