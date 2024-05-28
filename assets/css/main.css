@@ -13,16 +13,26 @@
   }
   @font-face {
     font-family: "Merriweather";
-    src: url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap")
-      format("OpenType");
+    src: url("@site/assets/Merriweather/Merriweather-Regular.ttf")
+      format("TrueType");
   }
   @font-face {
-    font-family: "Merriweather Sans";
-    src: url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap")
-      format("OpenType");
+    font-family: 'Merriweather Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Merriweather Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
   }
   h1 {
-    font-family: Merriweather Sans, system-ui;
+    font-family: 'Merriweather', system-ui;
     font-weight: bold;
     font-size: 2.5rem;
     /* margin: 24px 0 8px; */
@@ -30,6 +40,7 @@
     /* margin: 0 0 25px;     */
   }
   p, pre {
+    font-family: Merriweather;
     margin: 1.5rem 2rem 1rem;
   }
   h2 {
@@ -44,7 +55,7 @@
 
   h3 {
     /* font-family: 'Alimama ShuHeiTi Bold'; */
-    font-family: Merriweather Sans, system-ui;
+    font-family: 'Merriweather Sans', system-ui;
     font-size: 1.7rem;
   }
 
